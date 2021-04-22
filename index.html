@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel='stylesheet' href='style.css'>
+        <title>myLibrary</title>
+    </head>
+    <body class='body'>
+            <nav id='navbar'>
+                <div class='navleft'>
+                    <img src='images/library-book-svgrepo-com.svg' width='50px'>
+                    <h1><span class='text-white'>my</span><span>Library</span></h1>
+                </div>
+                <div class='navright'>
+                    <ul>
+                        <li>
+                            <div id='addNewBook' class='btn btn-one'>
+                                <span>Add Book</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        <section id='main-container'>    
+            <div id='book-container'></div>
+        </section>
+        <section id='add-book-popup'>
+            <form id='add-book-form'>
+                <div class='form-header'>
+                    <h2>Add New Book!</h2>
+                </div>
+                <div class='form-inputs'>
+                    <p class='required spacing'>Title:</p>
+                    <input id='titleInput' type='text' maxlength='40'>
+                    <p class='required spacing'>Author:</p>
+                    <input id='authorInput' type='text' maxlength='25'>
+                    <p class='required spacing'>Number of Pages:</p>
+                    <input id='pagesInput' type='text'>
+                    <p class='required spacing'>Rating(1-5):</p>
+                    <input id='ratingInput' type='text'>
+                    <label class='read-switch spacing'>
+                        <input id='readInput' type='checkbox'>
+                        <span class='read-slider'></span>
+                        <span class='push-right'> Read?</span> 
+                    </label>
+                    
+                </div>
+                <div class='form-footer'>
+                    <div id='formAddBtn' class='btn btn-one'>Add</div>
+                    <div id='formUpdateBtn' class='btn btn-one'>Update</div>
+                    <div id='formClearBtn' class='btn btn-one'>Clear</div>
+                </div>
+                
+            </form>
+        </section>
+        
+        
+
+        <script src="script.js"></script>
+    </body>
+    
+</html>
